@@ -5,11 +5,11 @@
     </div>
 
     <div class="class-select">
-        <label for="parent_id">Clase</label>
+        <label for="parent_id">Clase </label>
 
-        <select name="parent_id" id="function_class">
+        <select name="parent_id" id="function_class" data-parent_id="{{this.parent_id}}">
             {{#each @root.class}}
-            <option value="{{this.id}}" selected>{{this.class_name}}</option>
+            <option value="{{this.id}}" >{{this.class_name}}</option>
             {{/each}}
         </select>
     </div>
